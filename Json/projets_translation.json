@@ -1,0 +1,64 @@
+{
+  "fr": {
+    "project_title": "Projets",
+    "main": {
+      "projectContainer": {
+        "project1": {
+          "title": "Développement de site internet",
+          "description": "Création de site internet à la main, à partir de HTML, CSS et JavaScript pour les plus simples, et utilisation de React et VueJS pour les architectures dynamiques plus complexes."
+        },
+        "project2": {
+          "title": "Cours particulier et tutorat d'élèves",
+          "description": "Je réalise des cours de soutien dans les matières scientifiques pour aider les élèves en difficulté à s'améliorer."
+        },
+        "longTermTitle": "...sur le long terme",
+        "entrepreneurshipProject": {
+          "title": "Projet d'entrepreneuriat",
+          "description": "Création d'une start-up dans les technologies biomédicales."
+        },
+        "project3": {
+          "title": "Programmation orientée objet",
+          "description": "Apprentissage du C et C++ pour des applications orientées objet, robotique et systèmes embarqués."
+        },
+        "project4": {
+          "title": "Voyage à l'étranger (6 mois)",
+          "description": "Expérience d'un stage à l'international (Amérique du Sud) qui me permettra d'améliorer mon espagnol et de découvrir la culture latine."
+        }
+      }
+    },
+    "footer": {
+      "footerList": [
+        { "text": "Hébergé par : [Nom de ton hébergeur]" },
+        { "text": "Site web réalisé à la main" }
+      ]
+    }
+  },
+  "en": {
+    "project_title": "Projects",
+    "main": {
+      "projectContainer": {
+        "project1": {
+          "title": "Website Development",
+          "description": "Handcrafted website development using HTML, CSS, and JavaScript for simple projects, and React and VueJS for more complex dynamic architectures."
+        },
+        "project2": {
+          "title": "Private Tutoring",
+          "description": "I offer tutoring in scientific subjects to help students improve."
+        },
+        "longTermTitle": "...in the Long Term",
+        "project3": {
+          "title": "Entrepreneurship Project",
+          "description": "Creating a startup in biomedical technologies."
+        },
+        "project4": {
+          "title": "Object-Oriented Programming",
+          "description": "Learning C and C++ for object-oriented applications, robotics, and embedded systems."
+        },
+        "project5": {
+          "title": "Foreign Internship (6 months)",
+          "description": "Experience of an international internship (South America) to improve my Spanish and discover Latin culture."
+        }
+      }
+    }
+  }
+}

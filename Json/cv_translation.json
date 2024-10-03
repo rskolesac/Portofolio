@@ -1,0 +1,14 @@
+{
+    "fr": {
+        "header": {
+            "cv_title": "Mon CV"
+        },
+        "a": "telecharger mon CV"
+    },
+    "en": {
+        "header": {
+            "cv_title": "My CV"
+        },
+        "a": " Download my CV"
+    }
+}

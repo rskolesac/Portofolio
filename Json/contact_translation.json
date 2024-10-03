@@ -1,0 +1,47 @@
+{
+    "fr": {
+      "contact_title": "Contacte",
+      "main_contact_title": "Page de Contact",
+      "form_name_label": "Nom :",
+      "form_name_placeholder": "Entrez votre nom",
+      "form_email_label": "Email :",
+      "form_email_placeholder": "Entrez votre email",
+      "form_message_label": "Message :",
+      "form_message_placeholder": "Entrez votre message",
+      "form_submit_button": "Envoyer",
+      "social_media_title": "Réseaux Sociaux",
+      "social_linkedin_title": "LinkedIn",
+      "social_linkedin_profile": "Mon profil :",
+      "social_instagram_title": "Instagram",
+      "social_instagram_profile": "Mon profil :",
+      "social_github_title": "GitHub",
+      "social_github_profile": "Mon profil :",
+      "social_phone_title": "Téléphone",
+      "social_phone_contact": "Contactez-moi : +33 6 12 34 56 78",
+      "footer_hosted_by": "Hébergé par : [Nom de ton hébergeur]",
+      "footer_handmade": "Site web réalisé à la main"
+    },
+    "en": {
+      "contact_title": "Contact",
+      "main_contact_title": "Contact Page",
+      "form_name_label": "Name:",
+      "form_name_placeholder": "Enter your name",
+      "form_email_label": "Email:",
+      "form_email_placeholder": "Enter your email",
+      "form_message_label": "Message:",
+      "form_message_placeholder": "Enter your message",
+      "form_submit_button": "Send",
+      "social_media_title": "Social Media",
+      "social_linkedin_title": "LinkedIn",
+      "social_linkedin_profile": "My profile:",
+      "social_instagram_title": "Instagram",
+      "social_instagram_profile": "My profile:",
+      "social_github_title": "GitHub",
+      "social_github_profile": "My profile:",
+      "social_phone_title": "Phone",
+      "social_phone_contact": "Contact me: +33 6 12 34 56 78",
+      "footer_hosted_by": "Hosted by: [Your host name]",
+      "footer_handmade": "Website made by hand"
+    }
+  }
+  

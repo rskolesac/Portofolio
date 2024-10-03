@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@101.6,300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js" defer></script>
+    <script src="../javascript/translationManager.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mon Cv</h1>
+        <button id="menu-toggle">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="main.html">Acceuil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">Cv</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="language-toggle">EN</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-cv">
+        <section class="cv-container">
+            <div class="cv-image">
+                <img src="../images/mon_cv_img.png" alt="Mon CV" class="blurred-image">
+            </div>
+            <div class="cv-download">
+                <a href="../pdf/mon_cv.pdf" download class="download-button">Télécharger mon CV</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li>Hébergé par : [Nom de ton hébergeur]</li>
+            <li>Site web réalisé à la main</li>
+            <div class="svg-container">
+                <img src="../images/Robin.svg" alt="Mon logo" class="footer-logo" />
+            </div>
+        </ul>
+    </footer>

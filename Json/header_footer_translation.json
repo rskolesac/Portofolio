@@ -1,0 +1,37 @@
+{
+    "fr": {
+      "header": {
+        "menuItems": {
+          "home": "Accueil",
+          "projects": "Projets",
+          "cv": "CV",
+          "contact": "Contact",
+          "languageToggle": "EN"
+          
+            }
+        },
+        "footer": {
+        "footerList": [
+            { "text": "Hébergé par : [Nom de ton hébergeur]" },
+            { "text": "Site web réalisé à la main" }
+            ]
+        }
+    },
+    "en": {
+    "header": {
+      "menuItems": {
+        "home": "Home",
+        "projects": "Projects",
+        "cv": "CV",
+        "contact": "Contact",
+        "languageToggle": "FR"
+        }
+    },
+    "footer": {
+    "footerList": [
+        { "text": "Hosted by: [Your Hosting Provider]" },
+        { "text": "Handcrafted website" }
+        ]
+        }
+    }
+}
