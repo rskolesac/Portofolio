@@ -1,2 +1,2 @@
 # Portofolio
-cv personnel en ligne
+cv en ligne
