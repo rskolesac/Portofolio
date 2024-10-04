@@ -39,7 +39,7 @@ function loadPageScript(scriptPath, callback) {
 // Fonction pour déclencher la traduction des pages spécifiques
 function updatePageTranslations() {
     // Charger les fichiers de traduction spécifiques à chaque page
-    if (window.location.pathname.includes('main.html')) {
+    if (window.location.pathname.includes('index.html')) {
         loadPageScript('../javascript/main_translation.js', () => {
             // Callback pour exécuter la fonction de traduction de la page principale
             if (typeof setMainPageTranslations === 'function') {
