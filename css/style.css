@@ -135,17 +135,26 @@ nav ul li a:hover {
 /* Styles pour le conteneur principal */
 .container {
     display: flex; /* Utiliser flexbox pour aligner les sections */
-    justify-content: space-between; /* Espace entre les sections */
-    max-width: 1200px; /* Largeur maximale du conteneur */
+    justify-content: space-between; /* Espace entre les sections */ /* Largeur maximale du conteneur */
     margin: 30px auto;
 }
+/* Media query à partir de 800px de large */
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column; /* Empile les éléments verticalement */
+        flex-wrap: wrap; /* Permet l'emballage si nécessaire */
+    }
+}
+
 
 /* Styles pour les sections */
 section {
     width: 48%; /* Chaque section occupe presque la moitié de l'écran */
     padding: 20px; /* Espacement à l'intérieur des sections */
     background-color: #eaeaea; /* Couleur de fond des sections */
-    border-radius: 8px; /* Coins arrondis */
+    border-radius: 8px;
+    box-sizing: border-box; /* S'assure que le padding n'ajoute pas de largeur */
+    margin-bottom: 20px; /* Coins arrondis */
 }
 
 /* Styles pour les blocs */
@@ -175,7 +184,7 @@ h3 {
 .hero {
     position: relative; /* Positionnement relatif pour le titre */
     width: 100%; /* Prend toute la largeur de l'écran */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
+    height: 100%; /* Prend toute la hauteur de l'écran */
     overflow: hidden; /* Cache le débordement */
 }
 
@@ -197,6 +206,21 @@ h3 {
     text-align: center; /* Centre le texte */
     font-family: 'Fredoka', cursive; /* Exemple d'application */
 }
+
+@media (max-width: 1000px) {
+    .hero-title {
+        font-size: 1.8em; /* Ajuste encore plus pour mobile */
+    }
+
+    section {
+        width: 100%; /* Sur les écrans plus petits, chaque section prend toute la largeur */
+    }
+
+    .hero-image {
+        height: auto; /* Sur mobile, ajuste la hauteur pour éviter la déformation */
+    }
+}
+
 
 /* animer le surfer*/
 .surfer {
@@ -231,7 +255,8 @@ h3 {
 
 .stars:hover {
     text-shadow: 0 0 8px grey, 0 0 15px grey; /* Effet brillant */
-    color: #ffd700; /* Change la couleur pour un effet plus lumineux */
+    color: #ffd700;
+    transform: scale(1.1); /* Change la couleur pour un effet plus lumineux */
 }
 
 /* experience professionel*/
@@ -239,29 +264,29 @@ h3 {
     list-style-type: none; /* Enlève les puces de la liste */
     padding: 0; /* Enlève le padding par défaut */
 }
-
-.experience-list li {
-    margin: 10px 0; /* Espacement entre les éléments de la liste */
-    padding: 10px; /* Espacement interne */
-    background-color: #f9f9f9; /* Couleur de fond pour chaque expérience */
-    border-radius: 5px; /* Coins arrondis */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    color: #003366;
-}
-
 .passion-list {
     list-style-type: none; /* Enlève les puces de la liste */
     padding: 0; /* Enlève le padding par défaut */
+
 }
 
-.passion-list li {
-    margin: 10px 0; /* Espacement entre les éléments de la liste */
-    padding: 10px; /* Espacement interne */
-    background-color: #f9f9f9; /* Couleur de fond pour chaque passion */
-    border-radius: 5px; /* Coins arrondis */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre douce */
+
+.list-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.passion-list li,
+.experience-list li {
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     color: #003366;
 }
+
 
 /*footer*/
 footer {
@@ -306,6 +331,7 @@ footer {
 
 /* contact html*/
 .main-contact {
+    min-height: 100vh;
     background-color: #001f3f; /* Fond bleu foncé */
     color: white; /* Couleur du texte par défaut */
     padding: 20px; /* Espace intérieur */
@@ -438,6 +464,7 @@ textarea:focus {
 
 /* cv.html*/
 .cv-container {
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
