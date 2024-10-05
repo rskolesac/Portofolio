@@ -23,6 +23,11 @@ header {
     text-align: center; /* Centre le contenu de l'en-tête */
     position: relative; /* Nécessaire pour le positionnement absolu du bouton */
 }
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2em; /* Taille réduite du titre */
+    }
+}
 
 /* Styles pour le bouton de menu */
 #menu-toggle {
@@ -267,7 +272,13 @@ h3 {
 .passion-list {
     list-style-type: none; /* Enlève les puces de la liste */
     padding: 0; /* Enlève le padding par défaut */
+    max-height: 100px; /* Hauteur maximale du conteneur */
+    overflow: hidden; /* Masque le contenu qui dépasse */
+    transition: max-height 0.3s ease;
 
+}
+.passion-list:hover {
+    max-height: 300px; /* Hauteur maximale lors du survol */
 }
 
 
@@ -285,6 +296,19 @@ h3 {
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     color: #003366;
+}
+@media (max-width: 600px) {
+    .passion-list {
+        margin: 0;
+        display: flex; /* Affiche la liste en flexbox */
+        flex-direction: column; /* Aligne les éléments en colonne */
+        align-items: left; /* Centre les éléments horizontalement */
+        padding: 10px; /* Ajoute un peu d'espacement autour */
+    }
+    .passion-list li {
+        font-size: 0.9em; /* Réduit la taille de la police pour les petits écrans */
+        margin: 5px 0; /* Ajuste l'espacement entre les éléments */
+    }
 }
 
 
@@ -460,6 +484,40 @@ textarea:focus {
 
 .project-description {
     flex: 1; /* Permet à la description de prendre le reste de l'espace disponible */
+}
+@media (max-width: 600px) {
+    .project {
+        margin: 10px 0; /* Ajuster l'espacement selon la hauteur */
+    }
+
+    .project-description h2 {
+        font-size: 0.9em; /* Ajuster la taille du titre pour les écrans plus bas */
+    }
+
+    .project-description p {
+        font-size: 0.65em; /* Ajuster la taille du texte pour les écrans plus bas */
+    }
+
+    .project-image {
+        width: 20%; /* Réduire la taille de l'image si la hauteur de l'écran est limitée */
+    }
+}
+@media (max-height: 500px) {
+    .project {
+        margin: 10px 0; /* Ajuster l'espacement selon la hauteur */
+    }
+
+    .project-description h2 {
+        font-size: 0.9em; /* Ajuster la taille du titre pour les écrans plus bas */
+    }
+
+    .project-description p {
+        font-size: 0.65em; /* Ajuster la taille du texte pour les écrans plus bas */
+    }
+
+    .project-image {
+        width: 20%; /* Réduire la taille de l'image si la hauteur de l'écran est limitée */
+    }
 }
 
 /* cv.html*/
