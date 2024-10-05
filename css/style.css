@@ -25,7 +25,12 @@ header {
 }
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.2em; /* Taille réduite du titre */
+        font-size: 1.0em; /* Taille réduite du titre */
+    }
+}
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 0.8em; /* Taille réduite du titre */
     }
 }
 
@@ -48,6 +53,19 @@ header {
     transition: transform 0.3s ease;
 }
 /* Style du bouton */
+@media (max-width: 600px) {
+    #menu-toggle {
+        top: 25px;
+        width: 35px; /* Ajuste la largeur pour les petits écrans */
+        height: 35px; /* Ajuste la hauteur pour les petits écrans */
+    }
+
+    .bar {
+        background-color: #000;
+        width: 100%; /* Ajuste la largeur des barres pour les petits écrans */
+        height: 2px; /* Ajuste la hauteur des barres pour les petits écrans */
+    }
+}
 
 .bar {
     width: 100%;
@@ -136,6 +154,11 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
+@media (max-width: 430px) {
+    nav ul li {
+        font-size: 0.2em;
+    }
+}
 
 /* Styles pour le conteneur principal */
 .container {
@@ -172,6 +195,12 @@ section {
     height: 200px;
     transition: transform 0.3s, box-shadow 0.3s;
     
+}
+@media (max-width: 600px) {
+    
+    .block p {
+        font-size: 0.85em;
+    }
 }
 
 .block:hover {
